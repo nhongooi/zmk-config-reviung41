@@ -14,6 +14,7 @@
 #define RAISE   2
 #define ADJUST  3
 #define RPG     4
+#define MEDIA   5
 
 &mt {
     tapping-term-ms = <140>;
@@ -33,9 +34,9 @@
                 };
                 lower_layer {
                         bindings = <
-   &kp ESC  &kp N1      &kp N2     &kp N3     &kp N4       &kp N5                        &kp N6     &kp N7    &kp N8 &kp N9 &kp N0    &kp EQUAL
-   &kp DEL  &kp LG(J)   &kp LG(K)  &kp LG(L)  &kp LG(SEMI) &kp LC(TAB)                   &tog RPG   &trans    &trans &trans &trans    &kp PLUS
-   &trans   &kp LG(N1)  &kp LG(N2) &kp LG(N3) &kp LG(N4)   &kp LC(LS(TAB))               &trans     &trans    &trans &trans &kp GRAVE &kp PIPE
+   &kp ESC  &kp N1      &kp N2     &kp N3     &kp N4       &kp N5                        &kp N6     &kp N7        &kp N8 &kp N9 &kp N0    &kp EQUAL
+   &kp DEL  &kp LG(J)   &kp LG(K)  &kp LG(L)  &kp LG(SEMI) &kp LC(TAB)                   &tog RPG   &tog MEDIA    &trans &trans &trans    &kp PLUS
+   &trans   &kp LG(N1)  &kp LG(N2) &kp LG(N3) &kp LG(N4)   &kp LC(LS(TAB))               &trans     &trans        &trans &trans &kp GRAVE &kp PIPE
                                               &trans       &trans             &kp RET    &trans     &trans
                         >;
                 };
@@ -55,13 +56,22 @@
                                                    &trans          &trans         &trans    &trans       &trans
                         >;
                 };
+                rpg_layer {
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans                &trans   &trans     &trans   &trans    &trans  &trans
+   &trans &trans &trans &trans &trans &trans                &trans   &trans     &kp UP   &trans    &trans  &trans
+   &trans &trans &trans &trans &trans &trans                &trans   &kp LEFT   &kp DOWN &kp RIGHT &trans  &trans
+                               &trans &trans     &trans     &trans   &tog RPG
+                        >;
+                };
                 media_layer {
                         bindings = <
    &trans &trans &trans &trans &trans &trans                &kp LC(DEL) &trans     &kp I    &trans    &kp Q   &trans
    &trans &trans &trans &trans &trans &trans                &kp LS(A)   &trans     &kp UP   &trans    &kp DEL &trans
    &trans &trans &trans &trans &trans &trans                &kp HOME    &kp LEFT   &kp DOWN &kp RIGHT &kp END &trans
-                               &trans &trans     &trans     &trans      &tog RPG
+                               &trans &trans     &trans     &trans      &tog MEDIA
                         >;
                 };
+
         };
 };
