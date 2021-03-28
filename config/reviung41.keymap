@@ -29,7 +29,7 @@
                 lower_layer {
                         bindings = <
    &kp ESC  &kp N1      &kp N2     &kp N3     &kp N4       &kp N5                        &kp N6   &kp N7    &kp N8 &kp N9 &kp N0    &kp EQUAL
-   &kp DEL  &kp LG(J)   &kp LG(K)  &kp LG(L)  &kp LG(SEMI) &kp LC(TAB)                   &trans   &trans    &trans &trans &trans    &kp PLUS
+   &kp DEL  &kp LG(J)   &kp LG(K)  &kp LG(L)  &kp LG(SEMI) &kp LC(TAB)                   &tog 4   &trans    &trans &trans &trans    &kp PLUS
    &trans   &kp LG(N1)  &kp LG(N2) &kp LG(N3) &kp LG(N4)   &kp LC(LS(TAB))               &trans   &trans    &trans &trans &kp GRAVE &kp PIPE
                                               &trans       &trans             &kp RET    &trans   &trans
                         >;
@@ -49,6 +49,15 @@
    &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none              &none        &none        &none        &none        &none        &none
    &none           &none           &none           &none           &none &none              &none        &none        &none        &none        &none        &none
                                                    &trans          &trans         &trans    &trans       &trans
+                        >;
+                };
+
+                rpg_layer {
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans                &trans &trans   &trans   &trans    &trans &trans
+   &trans &trans &trans &trans &trans &trans                &trans &kp X    &kp UP   &kp S     &trans &trans
+   &trans &trans &trans &trans &trans &trans                &kp Z  &kp LEFT &kp DOWN &kp RIGHT &trans &kp RSHFT
+                               &trans &trans     &kp ENT    &trans &tog 4
                         >;
                 };
         };
