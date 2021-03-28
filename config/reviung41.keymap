@@ -59,15 +59,15 @@
                 rpg_layer {
                         bindings = <
    &trans &trans &trans &trans &trans &trans                &trans   &trans     &trans   &trans    &trans  &trans
-   &trans &trans &trans &trans &trans &trans                &trans   &trans     &kp UP   &trans    &trans  &trans
-   &trans &trans &trans &trans &trans &trans                &trans   &kp LEFT   &kp DOWN &kp RIGHT &trans  &trans
-                               &trans &trans     &trans     &trans   &tog RPG
+   &trans &trans &trans &trans &trans &trans                &trans   &kp X      &kp UP   &kp S     &trans  &trans
+   &trans &trans &trans &trans &trans &trans                &kp Z    &kp LEFT   &kp DOWN &kp RIGHT &trans  &kp RSHFT
+                               &trans &trans     &kp RET    &trans   &tog RPG
                         >;
                 };
                 media_layer {
                         bindings = <
    &trans &trans &trans &trans &trans &trans                &kp LC(DEL) &trans     &kp I    &trans    &kp Q   &trans
-   &trans &trans &trans &trans &trans &trans                &kp LS(A)   &trans     &kp UP   &trans    &kp DEL &trans
+   &trans &trans &trans &trans &trans &trans                &kp LS(A)   &kp LT     &kp UP   &kp GT    &kp DEL &trans
    &trans &trans &trans &trans &trans &trans                &kp HOME    &kp LEFT   &kp DOWN &kp RIGHT &kp END &trans
                                &trans &trans     &trans     &trans      &tog MEDIA
                         >;
