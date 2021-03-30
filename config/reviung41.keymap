@@ -58,9 +58,9 @@
                 };
                 rpg_layer {
                         bindings = <
-   &trans &trans &trans &trans &trans &trans                &trans   &trans     &trans   &trans    &trans  &trans
    &trans &trans &trans &trans &trans &trans                &trans   &kp X      &kp UP   &kp S     &trans  &trans
-   &trans &trans &trans &trans &trans &trans                &kp Z    &kp LEFT   &kp DOWN &kp RIGHT &trans  &kp RSHFT
+   &trans &trans &trans &trans &trans &trans                &trans   &kp LEFT   &kp DOWN &kp RIGHT &trans  &trans
+   &trans &trans &trans &trans &trans &trans                &kp Z    &trans     &trans   &trans    &trans  &kp RSHFT
                                &trans &trans     &kp RET    &trans   &tog RPG
                         >;
                 };
